@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Client.GameClientGUI">
+  <grid id="27dc6" binding="cardPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1020" height="636"/>
+    </constraints>
+    <properties>
+      <background color="-8339770"/>
+      <foreground color="-4736795"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="66e72" binding="mainMenuPanel" layout-manager="GridBagLayout">
+        <constraints>
+          <card name="mainMenu"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="24" style="1"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="c35fb" class="javax.swing.JLabel" binding="gameNameLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="48" style="1"/>
+              <foreground color="-11037723"/>
+              <horizontalAlignment value="0"/>
+              <text value="Поле Чудес"/>
+            </properties>
+          </component>
+          <hspacer id="78323">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="ceb84">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </vspacer>
+          <component id="33f47" class="javax.swing.JButton" binding="newGameButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="22" style="1"/>
+              <text value="Новая Игра"/>
+            </properties>
+          </component>
+          <component id="55822" class="javax.swing.JButton" binding="recordViewButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="22" style="1"/>
+              <text value="Посмотреть рекорды"/>
+            </properties>
+          </component>
+          <component id="f0a6a" class="javax.swing.JButton" binding="exitButton">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="22" style="1"/>
+              <text value="Выйти"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9f088" binding="gamePlayPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="eb61e" binding="infoPanel" layout-manager="GridBagLayout">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="37e7d" class="javax.swing.JLabel" binding="attemptLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="10" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="18"/>
+                  <horizontalAlignment value="2"/>
+                  <text value="Попытки"/>
+                </properties>
+              </component>
+              <vspacer id="7e1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="c18af" class="javax.swing.JLabel" binding="scoreLabelGame">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="10" bottom="10" right="10" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="18"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="Счёт"/>
+                </properties>
+              </component>
+              <hspacer id="b8d21">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="100" bottom="10" right="100" weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="9f30a" binding="lowerGamePanel" layout-manager="GridBagLayout">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="a46a1">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="223c5">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="b1855" class="javax.swing.JTextField" binding="letterTextField" custom-create="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="14"/>
+                  <minimumSize width="150" height="30"/>
+                  <preferredSize width="150" height="30"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="28810" class="javax.swing.JTextField" binding="wordTextField">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="14"/>
+                  <minimumSize width="150" height="30"/>
+                  <preferredSize width="150" height="30"/>
+                </properties>
+              </component>
+              <component id="f476f" class="javax.swing.JButton" binding="guessLetterButton">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="18"/>
+                  <text value="Угадать Букву"/>
+                </properties>
+              </component>
+              <component id="16229" class="javax.swing.JButton" binding="guessWordButton">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="18"/>
+                  <text value="Угадать слово"/>
+                </properties>
+              </component>
+              <hspacer id="92b7">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="0" bottom="10" right="140" weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <component id="ff97a" class="javax.swing.JLabel" binding="letterCost">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="16"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Стоимость буквы: 1"/>
+                </properties>
+              </component>
+              <component id="24ecf" class="javax.swing.JLabel" binding="wordCost">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="16"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Стоимость слова: 2"/>
+                </properties>
+              </component>
+              <component id="a4db1" class="javax.swing.JButton" binding="surrenderButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="10" bottom="10" right="30" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="16"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Сдаться"/>
+                  <verticalAlignment value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="33dfe" binding="middleGamePanel" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5cc95" class="javax.swing.JTextArea" binding="hintLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <editable value="false"/>
+                  <font name="Arial" size="24"/>
+                  <lineWrap value="true"/>
+                  <minimumSize width="750" height="84"/>
+                  <preferredSize width="750" height="84"/>
+                  <rows value="3"/>
+                  <text value="Подсказка"/>
+                  <wrapStyleWord value="true"/>
+                </properties>
+              </component>
+              <hspacer id="ceb07">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="17d15">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="b3121" class="javax.swing.JLabel" binding="wordHider">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="50" bottom="10" right="50" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="48"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="4"/>
+                  <text value="-,-,-,-,-"/>
+                </properties>
+              </component>
+              <component id="cfa9f" class="javax.swing.JLabel" binding="availableLetters">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="10" left="50" bottom="80" right="50" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="24"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="250" height="30"/>
+                  <minimumSize width="250" height="30"/>
+                  <preferredSize width="250" height="30"/>
+                  <text value="доступные буквы"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="662c5" binding="viewScoresPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card2"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2c0a3" class="javax.swing.JLabel" binding="recordBigLabel">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font name="Arial" size="48" style="1"/>
+              <foreground color="-12167963"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Рекорды:"/>
+            </properties>
+          </component>
+          <component id="14ff9" class="javax.swing.JButton" binding="backToMenuButton">
+            <constraints border-constraint="South"/>
+            <properties>
+              <text value="Вернуться в главное меню"/>
+            </properties>
+          </component>
+          <component id="67ff2" class="javax.swing.JTable" binding="scoresTable">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <autoCreateRowSorter value="false"/>
+              <font name="Arial" size="22"/>
+              <preferredSize width="150" height="150"/>
+              <rowHeight value="30"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
